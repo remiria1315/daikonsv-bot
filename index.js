@@ -1,4 +1,5 @@
 // index.js
+
 const {
   Client,
   GatewayIntentBits,
@@ -63,7 +64,7 @@ client.on('interactionCreate', async interaction => {
     
     await interaction.deferReply({ ephemeral: true })
     
-    await sendNews(title, content)
+    await sndNews(title, content)
     
     await interaction.editReply({ content: "送信しました！" })
   }
